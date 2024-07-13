@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="cursor h-[22rem] flex items-center justify-center w-[25rem] bg-[transparent] z-[99] absolute top-1/2 left-1/2 -translate-x-1/2">
+        <video class="mix-blend-hard-light object-cover object-top h-full w-full" src="./resources/file.mp4" autoplay muted loop></video>
+    </div>
+    <div id="nav" class="w-full h-32 flex justify-between items-center px-10 pt-4 pb-5 ">
+        <div id="left-nav" class="h-2/3 ">
+            <img class="h-full" src="https://static.wixstatic.com/media/102743_e8001de2a2fb4b9dae69015137e5c3dc~mv2.gif" alt="">
+        </div>
+        <div id="right-nav" class="flex items-center gap-4 ">
+            <div class="div border rounded border-black font-[700] tracking-tight text-[1.63rem] flex gap-5 px-7 py-1.5">
+                <button class="text-[#a3a3a3] hover:text-[#4700FF] transition">ES</button>
+                <button>EN</button>
+            </div>
+            <div class="div border-black text-center hover:text-white hover:bg-[#4700FF] transition border rounded px-14 align-center py-1.5 font-[800] text-[1.63rem] uppercase">
+                <h2>Let's Talk</h2>
+            </div>
+            <div class="div border-black border rounded px-5 py-1.5 font-[200] text-[1.63rem] uppercase">
+                <h2><i class="ri-menu-line"></i></h2>
+            </div>
+
+        </div>
+    </div>
+    <div id="main">
+        <div class="page1 p-10 font-extrabold tracking-normal leading-none text-center uppercase text-[10.69rem]">
+            <div class="txt flex items-center gap-2 justify-center">
+                <h1>United</h1>
+                <span class="bg-[#ECE5FF] border border-black rounded px-10 rotate-50">We Raise</span>
+            </div>
+            <h1>Your Brand</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

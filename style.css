@@ -1,0 +1,60 @@
+@font-face {
+    font-family: wfont;
+    font-weight: 200;
+    src: url(./fonts/file3.woff2);
+}
+@font-face {
+    font-family: wfont;
+    font-weight: 600;
+    src: url(./fonts/file2.woff2);
+}
+@font-face {
+    font-family: wfont;
+    font-weight: 800;
+    src: url(./fonts/file.woff2);
+}
+@font-face {
+    font-family: anon;
+    src: url(./fonts/3a46542f-f429-4821-9a88-62e3be54a640.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: wfont;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+
+}
+body {
+    overflow: hidden;
+    background: #FFFFFF;
+    background-image: url("https://static.wixstatic.com/media/102743_bbe23d65a55e4cbfa6df23f5e4bbccd5~mv2.png/v1/fill/w_1349,h_1458,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/Grid-Bluxstudio.png");
+    background-blend-mode: difference;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.txt span{
+    transform: rotate('90deg');
+    /* rotate: 90deg; */
+    animation: rotate 11s linear infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate {
+    0%{
+        rotate: -8deg;
+    }
+    25%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 8deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
