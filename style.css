@@ -3,58 +3,120 @@
     font-weight: 200;
     src: url(./fonts/file3.woff2);
 }
+
 @font-face {
     font-family: wfont;
     font-weight: 600;
     src: url(./fonts/file2.woff2);
 }
+
 @font-face {
     font-family: wfont;
     font-weight: 800;
     src: url(./fonts/file.woff2);
 }
+
 @font-face {
     font-family: anon;
     src: url(./fonts/3a46542f-f429-4821-9a88-62e3be54a640.woff2);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: wfont;
 }
-html , body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 
 }
+
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: #FFFFFF;
     background-image: url("https://static.wixstatic.com/media/102743_bbe23d65a55e4cbfa6df23f5e4bbccd5~mv2.png/v1/fill/w_1349,h_1458,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/Grid-Bluxstudio.png");
     background-blend-mode: difference;
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
 }
-.txt span{
+
+.cursor {
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./resources/lv-0-20240714004740-unscreen.gif);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav {
+
+    pointer-events: none;
+}
+
+#left-nav,
+#right-nav {
+
+    pointer-events: all;
+}
+
+.txt span {
     transform: rotate('90deg');
     /* rotate: 90deg; */
     animation: rotate 11s linear infinite;
     animation-fill-mode: forwards;
 }
+
 @keyframes rotate {
-    0%{
+    0% {
         rotate: -8deg;
     }
-    25%{
+
+    25% {
         rotate: 0deg;
     }
-    50%{
+
+    50% {
         rotate: 8deg;
     }
-    100%{
+
+    100% {
         rotate: 0deg;
     }
+}
+
+.logo-card p {
+    font-weight: 100;
+    line-height: 1;
+
+}
+
+.cards{
+    z-index: 100;
+    position: relative;
+}
+
+.card {
+    transform: translateY('300deg');
+    z-index: 10;
+    position: relative;
+    transition: transform 500ms ease-out 0s;
+    /* transform: perspective(1000px) rotateX(28.4deg) rotateY(9.330000000000005deg) rotate(var(--comp-rotate-z, 0deg)); */
+}
+
+.card svg {
+    fill: #FFFFFF;
+    scale: 0.8;
 }

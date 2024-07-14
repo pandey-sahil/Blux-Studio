@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="cursor h-[22rem] flex items-center justify-center w-[25rem] bg-[transparent] z-[99] absolute top-1/2 left-1/2 -translate-x-1/2">
-        <video class="mix-blend-hard-light object-cover object-top h-full w-full" src="./resources/file.mp4" autoplay muted loop></video>
-    </div>
-    <div id="nav" class="w-full h-32 flex justify-between items-center px-10 pt-4 pb-5 ">
+    <!-- <div class="cursor flex items-center justify-center z-20">
+        <!-- <video src="./resources/file.mp4" autoplay loop muted></video> -->
+
+
+
+
+
+
+
+    <div id="nav" class="fixed z-10 w-full h-32 flex justify-between items-center px-10 pt-4 pb-5 ">
         <div id="left-nav" class="h-2/3 ">
-            <img class="h-full" src="https://static.wixstatic.com/media/102743_e8001de2a2fb4b9dae69015137e5c3dc~mv2.gif" alt="">
+            <img class="h-full" src="https://static.wixstatic.com/media/102743_e8001de2a2fb4b9dae69015137e5c3dc~mv2.gif"
+                alt="">
         </div>
         <div id="right-nav" class="flex items-center gap-4 ">
-            <div class="div border rounded border-black font-[700] tracking-tight text-[1.63rem] flex gap-5 px-7 py-1.5">
+            <div
+                class="div border rounded border-black font-[700] tracking-tight text-[1.63rem] flex gap-5 px-7 py-1.5">
                 <button class="text-[#a3a3a3] hover:text-[#4700FF] transition">ES</button>
                 <button>EN</button>
             </div>
-            <div class="div border-black text-center hover:text-white hover:bg-[#4700FF] transition border rounded px-14 align-center py-1.5 font-[800] text-[1.63rem] uppercase">
+            <div
+                class="div border-black text-center hover:text-white hover:bg-[#4700FF] transition border rounded px-14 align-center py-1.5 font-[800] text-[1.63rem] uppercase">
                 <h2>Let's Talk</h2>
             </div>
             <div class="div border-black border rounded px-5 py-1.5 font-[200] text-[1.63rem] uppercase">
@@ -30,17 +42,58 @@
 
         </div>
     </div>
-    <div id="main">
+    <div id="main" class="mt-10 pt-20">
         <div class="page1 p-10 font-extrabold tracking-normal leading-none text-center uppercase text-[10.69rem]">
-            <div class="txt flex items-center gap-2 justify-center">
-                <h1>United</h1>
-                <span class="bg-[#ECE5FF] border border-black rounded px-10 rotate-50">We Raise</span>
+            <div class="text">
+                <div class="txt flex items-center gap-2 justify-center">
+                    <h1>United</h1>
+                    <span class="bg-[#ECE5FF] border border-black rounded px-10 rotate-50">We Raise</span>
+                </div>
+                <h1>Your Brand</h1>
             </div>
-            <h1>Your Brand</h1>
+            <div class="cards pt-[15rem] w-full px-14">
+                <div class="card py-10 px-10 bg-[#FFFFFF] w-[23rem] border border-black rounded-lg">
+                    <div class="logo-card h-2/3">
+                        <svg class="logo-card object-cover fill-black" preserveAspectRatio="xMidYMid meet"
+                            data-bbox="20.104 51.17 159.896 97.659" viewBox="20.104 51.17 159.896 97.659" height="150"
+                            width="150" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                            aria-hidden="true" aria-label="">
+                            <g>
+                                <path
+                                    d="M179.924 51.314a.369.369 0 0 0-.392-.13L20.373 96.64a.366.366 0 0 0 0 .706l39.766 11.418 7.476 40.065 16.489-33.184 48.753 13.999a.37.37 0 0 0 .416-.164l46.674-77.754a.365.365 0 0 0-.023-.412zm-2.306 1.18L60.564 108.123 21.807 96.995l155.811-44.501zm-44.829 76.367L84.67 115.044l93.966-62.84.204-.058-46.051 76.715z"
+                                    fill="#333333" data-color="1"></path>
+                            </g>
+                        </svg>
+                        <h3 class="my-6 text-4xl text-left">WE PREPARE <br>EVERYTHING FOR <br>TAKEOFF</h3>
+                        <p class=" text-lg text-left">Strategic branding for <br>companies and people.</p>
+                    </div>
+                </div>
+                <div class="card ml-[50rem] text-white py-10 px-10 bg-[#4100FF] w-[23rem] border border-black rounded-lg">
+                    <div class="logo-card h-2/3">
+                        <svg class="h-1/2" preserveAspectRatio="xMidYMid meet" data-bbox="19.416 22.307 161.168 155.386" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="19.416 22.307 161.168 155.386" data-type="color" role="presentation" aria-hidden="true" aria-label=""><defs></defs>
+                            <g>
+                                <path fill="#fff" d="M100 22.307C98.852 45.442 84.227 75.382 59.875 89.06c-10.647 5.98-29.426 9.379-40.459 10.405 11.032 1.026 29.812 4.424 40.459 10.405 24.351 13.678 38.976 44.688 40.125 67.823 1.148-23.135 15.773-54.145 40.125-67.823 10.647-5.98 29.426-9.379 40.459-10.405-11.032-1.026-29.812-4.424-40.459-10.405C115.773 75.382 101.148 45.442 100 22.307z" data-color="1"></path>
+                            </g>
+                        </svg>
+                        <h3 class="my-4 text-4xl text-left">YOUR BRAND IS <br>THE STAR</h3>
+                        <p class=" text-lg text-left">Increasing the value of your digital <br>products and brand through <br>design.</p>
+                    </div>
+                </div>
+                <div class="card px-10 bg-[#FFFFFF] w-[23rem] border border-black rounded-lg">
+                        <h3 class="my-6 text-4xl text-left">HI@BLUXSTUDIO.COM</h3>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
